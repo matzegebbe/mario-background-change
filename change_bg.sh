@@ -2,6 +2,8 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+cd $DIR
+
 function changebg {
 for i in $(ls ./pic/*.png); do
    feh --bg-scale $i
